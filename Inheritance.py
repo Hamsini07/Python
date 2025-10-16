@@ -1,0 +1,26 @@
+class Animal:
+    def __init__(self, name):  # Fixed init method
+        self.name = name
+
+    def eat(self):
+        print(self.name, "is eating.")
+
+
+class Dog(Animal):
+    def bark(self):
+        print(self.name, "is barking.")
+
+
+class Cat(Animal):
+    def meow(self):
+        print(self.name, "is meowing.")
+
+
+# Example usage
+dog = Dog("Buddy")
+cat = Cat("Whiskers")
+
+dog.eat()
+dog.bark()
+cat.eat()
+cat.meow()
